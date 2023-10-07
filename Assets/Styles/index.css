@@ -7,7 +7,9 @@
     --color_verdesuave:#CADA2A;
     --color_rojosuave: #D84C76;
     --color_moradosuave: #951973;
-
+    --color_azulfuerte: #0E38A0;
+    --color_menta:#2C7873;
+    --color_verdeazulado: #34675C;
 }
 
 /*Fonts*/
@@ -54,7 +56,6 @@ height: 4rem;
 .style-title-main{
 color: #FFFFFF;
 text-align: center;
-background-color: 
 }
 
 .style-image-main img{
@@ -362,6 +363,8 @@ background-color: var(--color_gris)
 }
 
 /*Section in the Social Media*/
+
+/*Movement*/
 .control-img-socialmedia{
 width: 40px;
 height: 40px;
@@ -373,11 +376,19 @@ transition: transform 0.3s ease-in-out;
 transform: translateY(-20px);
 }
 
+/*Control of the grid*/
+.control-footer-general{
+    display: grid;
+    grid-template-columns: repeat(4);
+    grid-template-rows: repeat(6)
+}
 .style-socialmedia-div-footer{
     display: grid;
     grid-template-columns: 1;
     grid-template-rows: 1;
 }
+
+/*General*/
 
 .control-reference-socialmedia-div-facebook-div{
 grid-column: 1;
@@ -403,16 +414,114 @@ grid-row: 1;
 margin-left: 150px;
 }
 
-.control-footer-general{
-    display: grid;
-    grid-template-columns: repeat(6);
-    grid-template-rows: repeat(3)
+.container-text2-textcontent-informcontact{
+
+    display: flex;
+    justify-items: space-between;
+    gap: 8px;
+    margin-bottom: 10px;
 }
+
+.container-text3-textcontent-informcontact{
+
+display: flex;
+justify-items: space-between;
+gap: 8px;
+}
+
+.control-textfarewell-footer{
+
+    display: flex;
+    align-items: space-between;
+    gap: 8px;
+}
+
+.style-socialmedia-div-footer{
+
+    grid-column: 4;
+    grid-row: 4;
+}
+
+
+.container-informationwork-footer{
+
+    grid-column: 1;
+    grid-row: 6;
+    margin-top: 20px;
+}
+.control-general-socialmedia{
+
+    grid-column:4;
+    grid-row: 6;
+    margin-top: 40px;
+
+}
+
+.control-textfarewell-footer{
+grid-column: 2;
+grid-row: 3;
+margin-right: 100px;
+}
+
+.control-informcontact-footer{
+
+    grid-column: 2;
+    grid-row: 1;
+}
+/* Section of the information contacts*/
+
+/*images*/
+
+
+.style-img-text3-textcontent{
+
+width: 30px;
+height: 30px;
+
+}
+
+
+.style-img-text2-textcontent{
+
+
+    width: 30px;
+    height: 30px;
+}
+
+.style-img-textfarewell{
+
+    width: 40px;
+    height:40px;
+}
+
+
+/*text*/
 
 .style-text-textcontent{
 
-    color: var(--color_moradosuave);
-    font-size: 20px;
+    color: var(--color_verdeazulado);
+    font-size: 18px;
     text-align: justify;
+}
+
+.style-a-text2-textcontent{
+    margin-top: 8px;
+    color: var(--color_moradosuave);
+    text-decoration: none;
+    text-align: justify;
+    font-size: 17px;
+}
+
+.style-p-text3-textcontent{
+
+    color: var(--color_azulfuerte);
+    margin-top: 10px; ;
+    font-size: 17px;
+}
+
+.style-text4-textfarewell{
+
+    margin-top: 10px;
+    color: var(--color_menta)
 }
 

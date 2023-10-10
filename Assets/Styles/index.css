@@ -1,7 +1,7 @@
 /*Variables y Diseño de Body*/
 :root{
 
-    --color_gris: #86868B;
+    --color_amarillo: #F5EA01;
     --color_azul: #1561F0;
     --color_purpura: #20123A;
     --color_verdesuave:#CADA2A;
@@ -359,7 +359,7 @@ left: 15.5rem;
 display: grid;
 grid-template-columns: repeat(3);
 grid-template-rows: repeat(3);
-background-color: var(--color_gris)
+background-color: var(--color_amarillo);
 }
 
 /*Section in the Social Media*/
@@ -460,7 +460,7 @@ gap: 8px;
 .control-textfarewell-footer{
 grid-column: 2;
 grid-row: 3;
-margin-right: 100px;
+margin-left: 150px
 }
 
 .control-informcontact-footer{
@@ -490,8 +490,8 @@ height: 30px;
 
 .style-img-textfarewell{
 
-    width: 40px;
-    height:40px;
+    width: 60px;
+    height:60px;
 }
 
 
@@ -522,6 +522,7 @@ height: 30px;
 .style-text4-textfarewell{
 
     margin-top: 10px;
-    color: var(--color_menta)
+    color: var(--color_azul);
+    font-size: 30px;
 }
 

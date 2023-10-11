@@ -1,8 +1,10 @@
+/*Colors in the Form and Background*/
 :root{
 
 --color_morado: #891FD3;
 --color_rosa: #E04A8E;
 --color_azulsuave: #117497;
+--verde_suave: #BEFF71;
 }
 
 /* Fonts */
@@ -47,6 +49,7 @@ Body{
     font-family: 'Quicksand';
 }
 
+/*Control of the grids*/
 .grid-control-body{
 
     display: grid;
@@ -54,84 +57,12 @@ Body{
     grid-template-rows: repeat(4);
     gap: 8px;
 }
-
-.control-form-general{
-/* display: flex;
-flex-direction: column;
-align-items: center; */
-margin-left: calc(50% - 500px);
-}
-
 .grid-control-content-form{
 
     display: grid;
-    grid-template-columns: repeat(4);
+    grid-template-columns: repeat(2);
     grid-template-rows: repeat(4);
-}
-
-.container-button-form{
-
-    position: relative;
-    margin-left: calc(100px - 30px);
-}
-
-.style-button-send{
-    border-radius: 10px;
-    height: 30px;
-    width: 80px;
-}
-
-.style-textbutton-form{
-
-    margin-top: 6px;
-}
-
-
-
-.style-divmain-2-general{
-    background-color:var(--color_morado);
-    margin: 20px;
-    border-radius: 10px;
-}
-
-
-.style-divmain-control-general{
-
-    background-image: linear-gradient(to bottom,#FF00C5,#8500AF);
-    width:calc(100% - 900px);
-    border-radius: 10px;
-    margin-left: 40px;
-}
-
-.style-text-legend{
-    text-align: center;
-    color: white;
-    font-size: 18px;
-    margin-bottom: 20px;
-
-}
-
-.style-h1-form{
-
-    color: #699BD4;
-    text-align: center;
-    grid-column: 1;
-    grid-row: 1;
-    margin-left: 15px;
-}
-
-.style-divmain-2-general{
-
-height: 400px;  
-}
-
-.style-img-h1-form{
-    grid-column: 2;
-    grid-row: 1;
-    width: 50px;
-    height: 50px;
-    margin-left: 10px;
-    margin-top: 10px;
+    margin-left: 80px;
 }
 
 .container-title-form{
@@ -140,6 +71,40 @@ height: 400px;
     grid-template-columns: repeat(2);
     grid-template-rows: repeat(1);
 }
+
+/*Buttons*/
+.container-button-form{
+
+    position: relative;
+    margin-left: calc(100px - 50px);
+    margin-top: 20px;
+}
+
+.style-button-send{
+    margin-bottom: 30px;
+    border-radius: 10px;
+    height: 30px;
+    width: 80px;
+    transition: background-color 0.5s ease;
+}
+
+.style-textbutton-form{
+
+    margin-top: 6px;
+}
+
+.style-button-newuser-form{
+
+    border-radius: 10px;
+    height: 30px;
+    width: 80px;
+    margin-left: 50px;
+    margin-top: 10px;
+    transition: background-color 0.5s ease;
+}
+
+
+/*Containers*/
 
 .container-question1-form{
 
@@ -160,12 +125,135 @@ height: 400px;
     grid-row: 3;
 }
 
+.grid-control-form{
+
+    position: absolute;
+    right: 50px;
+    top: 110px;
+}
+
+.style-divmain-2-general{
+    background-color:var(--color_morado);
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.style-divmain-2-general{
+
+    height: 400px;  
+}
+
+.container-newuser-form{
+
+    grid-column: 1;
+    grid-row: 4;
+    padding-right: 30px;
+
+}
+
+.style-divmain-control-general{
+
+    background-image: linear-gradient(to bottom,#FF00C5,#8500AF);
+    width:calc(100% - 900px);
+    border-radius: 10px;
+    margin-left: 40px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+/*Text*/
+.style-text-legend{
+    text-align: center;
+    color: #FF558B;
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding-right: 10px;
+
+}
+
+.style-h1-form{
+
+    color: #32FF79;
+    text-align: center;
+    grid-column: 2;
+    grid-row: 1;
+    margin-right: 5px;
+}
 
 .style-text-label1{
+    color:var(--verde_suave);
+    font-size: 18px;
     text-align: center;
     margin-left: 50px;
 }
 
+
 .style-text-label2{
+    font-size: 18px;
+    color: var(--verde_suave);
     margin-left: 40px;
 }
+
+.style-text-label3{
+    color: var(--verde_suave);
+    font-size: 18px;
+    margin-left: 15px;
+}
+
+/*Images*/
+
+.style-img-h1-form{
+    grid-column: 2;
+    grid-row: 1;
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    margin-right: 270px;
+}
+
+/*Inputs*/
+
+.style-input-question1{
+
+    margin-top: 4px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--color_rosa);
+    outline: none;
+    transition: box-shadow 0.3s ease;
+}
+
+.style-input-question2{
+
+    margin-top: 6px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--color_rosa);
+    outline: none;
+    transition: box-shadow 0.3s ease;
+}
+
+
+
+/*Animations*/
+
+.style-button-newuser-form:hover{
+
+    background-color: var(--color_rosa);
+    color: white;
+}
+
+.style-button-send:hover{
+
+    background-color: var(--color_rosa);
+    color: white;
+}
+
+.style-input-question2:hover{
+
+    box-shadow: 0px 0px 5px #333;
+}
+
+.style-input-question1:hover{
+    box-shadow: 0px 0px 5px #333;
+}
+

@@ -1,3 +1,81 @@
+/*Colors*/
+:root{
+    --color_naranjaUbuntu: #FF2300;
+    --color_amarilloUbuntu: #F4FF12;
+    --color_rojoUbuntu: #CD5C5C;
+}
+/*Fonts*/
+@font-face
+{
+    /*RockSalt*/
+    font-family:'RockSalt';
+    src: url(/Assets/fonts/RockSalt-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    /*Quicksand*/
+    font-family: 'Quicksand';
+    src: url(/Assets/fonts/Quicksand-VariableFont_wght.ttf) format('truetype');
+}
+
+@font-face{
+    /*PixelSans*/
+    font-family: 'PixelSans';
+    src: url(/Assets/fonts/PixelifySans-VariableFont_wght.ttf) format('truetype')
+}
+@font-face{
+        /*Oswald*/
+        font-family: 'Oswald';
+        src:url(/Assets/fonts/Oswald-VariableFont_wght.ttf) format('truetype');
+}
+
+/*Body*/
+.control-body-general{
+background-color: var(--color_naranjaUbuntu);
+padding: 0;
+margin: 0;
+font-family: 'Quicksand'
+}
+
+/*Header*/
+.container-maintitle-header{
+    background-color: var(--color_rojoUbuntu);
+    padding-top: 10px;
+}
+
+.style-img-h1-header{
+    width: 60px;
+    height: 60px;
+}
+
+.style-h1-titlemain-header{
+
+    color: var(--color_amarilloUbuntu);
+}
+
+.style-title-main{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.style-img-h2-header-1{
+    width: 90%;
+    height: 16rem;
+}
+
+.container-elements-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.style-h2-header-1{
+    color: white;
+    font-size: 2rem
+}
+/* 
 .img-td-1-table{
 width: 6rem;
 height: 6rem;
@@ -7,4 +85,4 @@ height: 6rem;
 text-align: center;
 border-radius: 10px;
 border-color: black;
-}
+} */

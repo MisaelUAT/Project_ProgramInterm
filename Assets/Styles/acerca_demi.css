@@ -4,6 +4,7 @@
     --color_amarilloUbuntu: #F4FF12;
     --color_rojoUbuntu: #CD5C5C;
     --color_verdelima: #9EFF3C;;
+    --color_morado: #9E3CFF;
 }
 /*Fonts*/
 @font-face
@@ -54,17 +55,7 @@ font-family: 'Quicksand'
     color: var(--color_amarilloUbuntu);
 }
 
-.style-title-main{
-display: flex;
-justify-content: center;
-align-items: center;
-}
-
-.style-img-h2-header-1{
-    width: 90%;
-    height: 18rem;
-}
-
+/*Flex*/
 .container-elements-header{
     display: flex;
     flex-direction: column;
@@ -72,16 +63,36 @@ align-items: center;
     justify-content: center;
 }
 
+/*Title main*/
+
+.style-title-main{
+display: flex;
+justify-content: center;
+align-items: center;
+}
 .style-h2-header-1{
     color: white;
     font-size: 2rem
 }
 
-.style-img-h3-section1{
-    width: 60px;
-    height: 60px;
-    margin-right: 10px;
+.style-img-h2-header-1{
+    width: 90%;
+    height: 18rem;
 }
+
+/*Main*/
+
+/*Grid*/
+.control-main-general{
+    display: grid;
+    grid-template-columns: repeat(3);
+    grid-template-rows: repeat(3);
+    gap: 8px;
+    grid-auto-columns: 400px; /*height*/
+    grid-auto-rows: 400px; /*width*/
+}
+
+/*Containers*/
 
 .control-title1-main-section1{
     display: flex;
@@ -89,6 +100,25 @@ align-items: center;
     justify-content: center;
 }
 
+.control-title3-main-section3{
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    padding-top: 20px;
+}
+.control-title2-main-section2{
+    display: flex;
+    flex-direction:row-reverse;
+    justify-content: center;
+}
+
+.control-section3-main{
+
+    grid-column: 1;
+    grid-row: 2;
+
+}
 .control-section2-main{
 
     grid-row: 1;
@@ -96,24 +126,76 @@ align-items: center;
     padding-top: 40px
 }
 
-.style-h3-section2-main{
-    color: var(--color_amarilloUbuntu);
-    font-size: 23px;
-}
-.control-main-general{
-    display: grid;
-    grid-template-columns: repeat(3);
-    grid-template-rows: repeat(6);
-    gap: 8px;
-    grid-auto-columns: 400px; /*height*/
-    grid-auto-rows: 400px; /*width*/
-}
 .grid-control-title-h3{
     padding-left: 40px;
     padding-top: 40px;
     grid-column: 1;
     grid-row: 1;
 }
+
+.control-section4-main{
+
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.grid-control-section2{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.control-section3-main{
+
+    grid-column: 3;
+    grid-row: 1;
+    padding-top: 15px;
+}
+
+.control-textcontent-main-section3{
+    padding-top: 7.5px;
+}
+
+/*Styles of the element in the sections*/
+
+.style-img-h3-section1{
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+
+.style-h3-section2-main{
+    color: var(--color_amarilloUbuntu);
+    font-size: 23px;
+}
+
+.style-img-h3-section3-main{
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.style-h3-section3-main{
+    color: var(--color_amarilloUbuntu);
+    font-size: 23px;
+}
+
+.style-text-section3-main{
+
+    color: var(--color_verdelima);
+    font-size: 18px;
+    text-align: justify;
+    margin-left: 25px;
+}
+
+.style-textcontent-section2-main{
+    color: var(--color_verdelima);
+    font-size: 18px;
+    text-align: justify;
+    margin-left: 25px;
+}
+
+
 
 .style-h3-title-section1{
     color: var(--color_amarilloUbuntu);
@@ -136,24 +218,58 @@ align-items: center;
     margin-right: 10px;
 }
 
-.grid-control-section2{
-    grid-column: 2;
-    grid-row: 1;
-}
+.style-img-row2-column3{
 
-.control-title2-main-section2{
-    display: flex;
-    flex-direction:row-reverse;
-    justify-content: center;
-}
-/* 
-.img-td-1-table{
-width: 6rem;
-height: 6rem;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
 }
 
 .style-table-main{
-text-align: center;
-border-radius: 10px;
-border-color: black;
-} */
+
+    background-color: #ADD8E6;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.container-informationtable-section4{
+
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+
+.style-table-main th, .style-table-main td{
+
+    border: 1px solid #EDEDED;
+    text-align: center;
+}
+
+.style-table-main th{
+    color: var(--color_rojoUbuntu);
+    font-size: 16px;
+}
+
+.style-table-row1 {
+
+    background-color: var(--color_morado);
+    color:white;
+}
+
+.style-caption-table-section4{
+
+    font-size: 18px;
+    font-family: 'RockSalt';
+    color: #2DFF44;
+}
+
+.style-ul-table-row6{
+
+    text-align: justify;
+}
+
+.style-ul-table-row7{
+
+    text-align: justify;
+}

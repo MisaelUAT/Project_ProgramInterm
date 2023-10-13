@@ -39,6 +39,35 @@ margin: 0;
 font-family: 'Quicksand'
 }
 
+/*Navegation Bar*/
+.control-flexbox-references-nav{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:8px;
+}
+
+.style-nav .style-references-nav{
+    background-color: #131313;
+    margin-top: -3px;
+    margin-bottom: -3px;
+}
+
+.style-references-nav a{
+ text-decoration: none;
+ color: white;
+ font-size: 18px;
+ padding: 6px;
+ background-color:transparent;
+ transition: background-color 0.2s;
+ width: 15%;
+ text-align: center;
+}
+
+.style-references-nav a:hover{
+background-color:#86868B;
+}
+
 /*Header*/
 .container-maintitle-header{
     background-color: var(--color_rojoUbuntu);
